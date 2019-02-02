@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="preferred_padding">16dp</dimen>
+    <dimen name="preferred_margin">8dp</dimen>
+    <dimen name="cardView_corner_radius">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="margin_navigation_header">24dp</dimen>
+    <dimen name="diamter_profile_pic">64dp</dimen>
+</resources>

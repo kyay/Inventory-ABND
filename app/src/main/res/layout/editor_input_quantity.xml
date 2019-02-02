@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/EditorInputStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/quantity_decrement"
+        style="@style/QuantityButtonStyle"
+        android:text="@string/quantity_minus" />
+
+    <EditText
+        android:id="@+id/quantity_edit_text"
+        style="@style/EditorInputStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/preferred_margin"
+        android:layout_marginRight="@dimen/preferred_margin"
+        android:gravity="center"
+        android:importantForAutofill="no"
+        tools:ignore="LabelFor,TextFields,UnusedAttribute" />
+
+    <Button
+        android:id="@+id/quantity_increment"
+        style="@style/QuantityButtonStyle"
+        android:text="@string/quantity_plus" />
+</LinearLayout>

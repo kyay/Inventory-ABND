@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">Inventory</string>
+
+    <string name="button_discard">Discard</string>
+    <string name="button_export">Export</string>
+    <string name="button_import">Import</string>
+    <string name="button_order">Order</string>
+
+    <string name="description_item_image">Item Image</string>
+    <string name="description_nav_header_background">Background</string>
+
+    <string name="hint_description">Description</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_price">Price</string>
+    <string name="hint_quantity">Quantity</string>
+    <string name="hint_search">Search</string>
+    <string name="hint_search_items">Search Items</string>
+    <string name="hint_sup_name">Supplier Name</string>
+    <string name="hint_sup_number">Supplier Phone No.</string>
+
+    <string name="item_picture_add">Add Image</string>
+    <string name="item_picture_desc">Item Image</string>
+    <string name="item_picture_edit">Edit Image</string>
+    <string name="item_price">Price: $%,.2f</string>
+    <string name="item_quantity">Quantity: %d</string>
+    <!-- This is the separator between the Quantity title and the Quantity number,
+    you MUST provide this for the app to work for your language -->
+    <string name="item_quantity_separator">:</string>
+
+    <string name="label_delete">Delete</string>
+    <string name="label_details">Details</string>
+    <string name="label_editor_add">Add Item</string>
+    <string name="label_editor_details">Item Details</string>
+    <string name="label_editor_edit">Edit Item</string>
+    <string name="label_history_clear">Clear Search History</string>
+    <string name="label_log_out">Log out</string>
+    <string name="label_overview">General Overview</string>
+    <string name="label_sell">Sell</string>
+    <string name="label_sign_in">Sign in</string>
+    <string name="label_sup">Supplier Info</string>
+
+    <string name="menu_delete">Delete</string>
+
+    <string name="message_item_deleted">Item Deleted</string>
+    <string name="message_provide_value">Please Provide a valid value</string>
+    <string name="message_undo">Undo</string>
+
+    <string name="msg_discard">Discard your changes?</string>
+    <string name="msg_empty">There is nothing in your inventory, start by adding items using the button below</string>
+    <string name="msg_history_clear">Clear all Search History?</string>
+    <string name="msg_item_delete">Delete this item?</string>
+    <string name="msg_item_inserted">Item added successfully</string>
+    <string name="msg_item_updated">Item updated successfully</string>
+    <string name="msg_loading">Loading. please wait</string>
+    <string name="msg_log_out">You were logged out successfully</string>
+
+    <string name="quantity_minus">-</string>
+    <string name="quantity_plus">+</string>
+
+    <string name="unknown_delete">Cannot delete unknown Uri</string>
+    <string name="unknown_insert">Cannot Insert unknown Uri</string>
+    <string name="unknown_query">Cannot query unknown Uri</string>
+    <string name="unknown_type">Unknown URI</string>
+    <string name="unknown_update">Cannot update unknown Uri</string>
+
+    <string name="with_match">with match</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FieldView">
+        <attr name="title_text" format="string" />
+        <attr name="input_hint" format="string" />
+        <attr name="android:inputType" />
+        <attr name="titleLayout" format="reference" />
+        <attr name="inputLayout" format="reference" />
+        <attr name="input_childId" format="reference" />
+        <attr name="readOnly" format="boolean" />
+    </declare-styleable>
+</resources>

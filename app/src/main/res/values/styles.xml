@@ -1,0 +1,51 @@
+<!--suppress AndroidDomInspection -->
+<resources>
+
+    <!-- Base application theme.
+     I am using the Material theme because it is better and because it is gonna be updated more-->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- SearchView attributes-->
+        <item name="autoCompleteTextViewStyle">@style/Widget.AppCompat.AutoCompleteTextView.Light
+        </item>
+        <item name="textAppearanceSearchResultTitle">
+            @style/TextAppearance.AppCompat.SearchResult.Title.Light
+        </item>
+    </style>
+
+    <style name="Widget.AppCompat.AutoCompleteTextView.Light">
+        <item name="android:popupBackground">@android:color/white</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.SearchResult.Title.Light">
+        <item name="android:textColor">?android:textColorPrimaryInverse</item>
+    </style>
+
+    <style name="EditorTitleStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:textColor">?colorAccent</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+    </style>
+
+    <style name="EditorInputStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">2</item>
+        <item name="fontFamily">sans-serif-light</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+
+    <style name="QuantityButtonStyle">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+
+</resources>

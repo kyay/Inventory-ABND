@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?><!--suppress AndroidDomInspection -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.EditorActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            app:elevation="4dp"
+            tools:ignore="UnusedAttribute">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="4dp"
+                android:fitsSystemWindows="true"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:contentScrim="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <include
+                    android:id="@+id/dummy_toolbar"
+                    layout="@layout/toolbar"
+                    android:visibility="invisible"
+                    app:layout_collapseMode="pin" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_collapseMode="parallax">
+
+                    <ImageView
+                        android:id="@+id/image_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/description_item_image"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/ic_inventory" />
+
+                    <TextView
+                        android:id="@+id/add_pic_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/round_rect"
+                        android:drawableStart="@drawable/ic_camera_alt"
+                        android:drawableLeft="@drawable/ic_camera_alt"
+                        android:drawablePadding="8dp"
+                        android:padding="8dp"
+                        android:text="@string/item_picture_add"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <com.example.android.inventory.view.FieldView
+                    android:id="@+id/name_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:input_hint="@string/hint_name"
+                    app:title_text="@string/label_overview" />
+
+                <com.example.android.inventory.view.FieldView
+                    android:id="@+id/quantity_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    app:inputLayout="@layout/editor_input_quantity"
+                    app:input_childId="@id/quantity_edit_text"
+                    app:input_hint="@string/hint_quantity" />
+
+                <com.example.android.inventory.view.FieldView
+                    android:id="@+id/supplier_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:input_hint="@string/hint_sup_name"
+                    app:title_text="@string/label_sup" />
+
+                <com.example.android.inventory.view.FieldView
+                    android:id="@+id/supplier_no_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    app:input_hint="@string/hint_sup_number" />
+
+                <Button
+                    android:id="@+id/import_export_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="@string/button_import" />
+
+                <com.example.android.inventory.view.FieldView
+                    android:id="@+id/price_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    app:input_hint="@string/hint_price"
+                    app:title_text="@string/label_details" />
+
+                <com.example.android.inventory.view.FieldView
+                    android:id="@+id/desc_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    app:input_hint="@string/hint_description" />
+
+                <Button
+                    android:id="@+id/order_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="@string/button_order" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            app:srcCompat="@drawable/avd_anim_edit_to_checkmark" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <include
+        android:id="@+id/real_toolbar"
+        layout="@layout/toolbar_no_effects" />
+
+</merge>
